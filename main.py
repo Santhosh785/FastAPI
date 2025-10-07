@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from models import product
 
-app = FastAPI()   # ✅ correct capitalization
+app = FastAPI() 
 
-@app.get("/")     # 👈 This defines a route
+@app.get("/")     
 def greet():
     return {"message": "hello from WEBSERVER"}
 
